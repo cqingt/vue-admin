@@ -1,6 +1,6 @@
 <template>
   <div class="dashboard-container">
-    <div class="dashboard-text">name: {{ name }}</div>
+    <div class="dashboard-text">name: {{ message }} </div>
   </div>
 </template>
 
@@ -8,6 +8,11 @@
 import { mapGetters } from 'vuex'
 
 export default {
+    data() {
+        return {
+            message: '数据统计页'
+        }
+    },
   name: 'Dashboard',
   computed: {
     ...mapGetters([

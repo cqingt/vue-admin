@@ -93,3 +93,34 @@ export default {
   }
 }
 </script>
+<style>
+  .el-submenu.is-opened .el-menu-item.is-active {
+    background-color: #1890ff !important;
+    color: #fff;
+  }
+
+  .sider-menu-logo {
+    position: relative;
+    height: 64px;
+    padding-left: 24px;
+    overflow: hidden;
+    line-height: 64px;
+    background: #001529;
+    transition: all 0.3s;
+    text-align: left;
+  }
+  .sider-menu-logo img {
+    display: inline-block;
+    height: 32px;
+    vertical-align: middle;
+  }
+  .sider-menu-logo h1 {
+    display: inline-block;
+    margin: 0 0 0 12px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: Avenir, Helvetica Neue, Arial, Helvetica, sans-serif;
+    vertical-align: middle;
+  }
+</style>

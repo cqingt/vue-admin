@@ -54,3 +54,9 @@ export default {
   }
 }
 </script>
+<style>
+  .sidebar-logo-container{
+    height: 64px !important;
+    line-height: 64px !important;
+  }
+</style>
