@@ -47,7 +47,7 @@ export const constantRoutes = [
         path: '/',
         component: Layout,
         redirect: '/dashboard',
-        meta: {title: '系统设置', icon: 'dashboard'},
+        meta: {title: '系统设置', icon: 'el-icon-setting'},
         children: [
             {
                 path: 'dashboard',
@@ -69,7 +69,7 @@ export const constantRoutes = [
         component: Layout,
         redirect: '/example/table',
         name: 'Example',
-        meta: {title: '示例', icon: 'example'},
+        meta: {title: '示例', icon: 'el-icon-date'},
         children: [
             {
                 path: 'table',
@@ -90,7 +90,7 @@ export const constantRoutes = [
         path: '/form',
         component: Layout,
         alwaysShow: true,
-        meta: {title: '示例', icon: 'form'},
+        meta: {title: '示例', icon: 'el-icon-tickets'},
         children: [
             {
                 path: 'index',

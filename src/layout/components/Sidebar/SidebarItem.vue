@@ -57,16 +57,17 @@ export default {
     return {}
   },
   methods: {
+      // 是否只显示父级
     hasOneShowingChild(children = [], parent) {
       const showingChildren = children.filter(item => {
         if (item.hidden) {
           return false
         } else {
           // Temp set(will be used if only has one showing child)
-          this.onlyOneChild = item
+          this.onlyOneChild = item;
           return true
         }
-      })
+      });
 
       // When there is only one child router, the child router is displayed by default
       if (showingChildren.length === 1) {
@@ -75,12 +76,13 @@ export default {
 
       // Show parent if there are no child router to display
       if (showingChildren.length === 0) {
-        this.onlyOneChild = { ... parent, path: '', noShowingChildren: true }
+        this.onlyOneChild = { ... parent, path: '', noShowingChildren: true };
         return true
       }
 
       return false
     },
+      // 路径处理，外链或内部链接
     resolvePath(routePath) {
       if (isExternal(routePath)) {
         return routePath
@@ -94,11 +96,13 @@ export default {
 }
 </script>
 <style>
-  .el-submenu.is-opened .el-menu-item.is-active {
+ #app .sidebar-container .el-submenu .el-menu-item.is-active {
     background-color: #1890ff !important;
-    color: #fff;
+    color: #fff !important;
   }
-
+.hideSidebar .el-submenu__title{
+    text-align: center !important;
+}
   .sider-menu-logo {
     position: relative;
     height: 64px;
