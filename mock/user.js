@@ -36,7 +36,7 @@ export default [
       if (!token) {
         return {
           code: 60204,
-          message: 'Account and password are incorrect.'
+          msg: 'Account and password are incorrect.'
         }
       }
 
@@ -59,7 +59,7 @@ export default [
       if (!info) {
         return {
           code: 50008,
-          message: 'Login failed, unable to get user details.'
+          msg: 'Login failed, unable to get user details.'
         }
       }
 

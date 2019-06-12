@@ -96,10 +96,6 @@ export default {
 }
 </script>
 <style>
- #app .sidebar-container .el-submenu .el-menu-item.is-active {
-    background-color: #1890ff !important;
-    color: #fff !important;
-  }
 .hideSidebar .el-submenu__title{
     text-align: center !important;
 }

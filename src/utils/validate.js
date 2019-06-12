@@ -1,8 +1,9 @@
 /**
- * Created by PanJiaChen on 16/11/18.
+ * 验证类
  */
 
 /**
+ * 是否外链
  * @param {string} path
  * @returns {Boolean}
  */
@@ -11,6 +12,7 @@ export function isExternal(path) {
 }
 
 /**
+ * 用户名校验
  * @param {string} str
  * @returns {Boolean}
  */

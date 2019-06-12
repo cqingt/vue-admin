@@ -7,7 +7,8 @@
     <div class="right-menu">
       <el-dropdown class="avatar-container" trigger="click" placement="bottom-start">
         <div class="avatar-wrapper">
-          <img :src="avatar+'?imageView2/1/w/80/h/80'" class="user-avatar">
+            <a href="javascript:void(0)">你好：{{username}}</a>
+          <!--<img :src="avatar+'?imageView2/1/w/80/h/80'" class="user-avatar">-->
           <i class="el-icon-caret-bottom" />
         </div>
 
@@ -30,6 +31,11 @@ import Breadcrumb from '@/components/Breadcrumb'
 import Hamburger from '@/components/Hamburger'
 
 export default {
+    data() {
+        return {
+            username: this.$store.getters.name
+        }
+    },
   components: {
     Breadcrumb,
     Hamburger
@@ -111,7 +117,7 @@ export default {
       margin-right: 30px;
 
       .avatar-wrapper {
-        margin-top: 5px;
+        /*margin-top: 5px;*/
         position: relative;
 
         .user-avatar {

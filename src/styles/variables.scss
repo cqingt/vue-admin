@@ -1,17 +1,22 @@
 // sidebar
 $menuText:#bfcbd9;
 $menuActiveText:#409EFF;
-$subMenuActiveText:#f4f4f5; //https://github.com/ElemeFE/element/issues/12951
+$subMenuActiveText:#fff;// 子菜单选中颜色 //https://github.com/ElemeFE/element/issues/12951
+//$subMenuActiveText:#f4f4f5;
+$menuBg: #041e38;//#304156; // 左侧 菜单 背景颜色
+$menuHover:#263445; // 主菜单hover背景颜色
 
-$menuBg:#304156;
-$menuHover:#263445;
+$subMenuBg:#000c17;//#1f2d3d; // 子菜单默认背景颜色
+$subMenuHover:#000;//#001528; // 子菜单hover颜色
 
-$subMenuBg:#1f2d3d;
-$subMenuHover:#001528;
+$sideBarWidth: 210px; // 左侧菜单宽度
 
-$sideBarWidth: 210px;
+$subMenuActiveBg:#1890ff;// 子菜单选中背景颜色
 
-// the :export directive is the magic sauce for webpack
+$menuLogoBg: #1890ff; // logo背景颜色
+$menuLogoText: #ffffff; // logo字体颜色
+
+  // the :export directive is the magic sauce for webpack
 // https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
 :export {
   menuText: $menuText;
@@ -22,4 +27,7 @@ $sideBarWidth: 210px;
   subMenuBg: $subMenuBg;
   subMenuHover: $subMenuHover;
   sideBarWidth: $sideBarWidth;
+  subMenuActiveBg: $subMenuActiveBg;
+  menuLogoBg: $menuLogoBg;
+  menuLogoText: $menuLogoText;
 }
