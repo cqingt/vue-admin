@@ -1,7 +1,7 @@
 <template>
   <div class="app-container">
     <el-form ref="form" :model="form" label-width="120px">
-      <el-form-item label="旧密码">
+      <el-form-item label="旧密码s">
         <el-input v-model="form.old_password" size="medium" placeholder="请输入旧密码" :show-password="true" type="password"/>
       </el-form-item>
       <el-form-item label="新密码">
